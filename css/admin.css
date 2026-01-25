@@ -58,7 +58,7 @@
 }
 
 .admin-login-form input {
-    width: 100%;
+    width: 80%;
     padding: 1rem;
     margin: 0.8rem 0;
     border: 1px solid #ccc;
@@ -73,7 +73,7 @@
 }
 
 .admin-login-btn {
-    width: 100%;
+    width: 40%;
     padding: 1.1rem;
     background: #005566;
     color: white;
@@ -227,8 +227,14 @@
 .admin-main {
     margin-left: 260px;
     padding: 90px 2rem 3rem;
+    
     min-height: 100vh;
     background: #f8f9fa;
+}
+
+.admin-main h1, p{
+    display: flex;
+    justify-content: center;
 }
 
 /* Dashboard Cards */
@@ -246,6 +252,10 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
     text-align: center;
     transition: transform 0.2s;
+}
+
+.admin-card a{
+    text-decoration: none;
 }
 
 .admin-card:hover {

@@ -32,6 +32,13 @@ $hotlines = $pdo->query("SELECT * FROM hotlines ORDER BY name")->fetchAll();
 
 <div class="admin-mobile-menu" id="adminMobileMenu">
     <!-- same mobile menu HTML as in dashboard.php -->
+     <div class="admin-mobile-header">
+        <button class="admin-close-menu">&times;</button>
+        <div class="logo">
+            <img src="../images/caloocan_seal.png" alt="Logo" style="height:40px;">
+            Admin Panel
+        </div>
+    </div>
     <nav class="admin-mobile-nav">
         <a href="../admin/dashboard.php">Dashboard</a>
         <a href="manage_hotlines.php" class="active">Hotlines</a>

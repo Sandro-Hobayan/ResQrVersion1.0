@@ -27,7 +27,32 @@ include '../includes/db.php';
     </div>
 </header>
 
-<!-- Mobile menu, overlay, sidebar – copy from dashboard.php -->
+ <div class="admin-mobile-menu" id="adminMobileMenu">
+    <!-- same mobile menu HTML as in dashboard.php -->
+     <div class="admin-mobile-header">
+        <button class="admin-close-menu">&times;</button>
+        <div class="logo">
+            <img src="../images/caloocan_seal.png" alt="Logo" style="height:40px;">
+            Admin Panel
+        </div>
+    </div>
+    <nav class="admin-mobile-nav">
+        <a href="../admin/dashboard.php">Dashboard</a>
+        <a href="manage_hotlines.php" class="active">Hotlines</a>
+        <a href="manage_guidelines.php">Guidelines</a>
+        <a href="../admin/logout.php">Logout</a>
+    </nav>
+</div>
+
+<div class="admin-menu-overlay" id="adminMenuOverlay"></div>
+
+<aside class="admin-sidebar">
+    <h3>Navigation</h3>
+    <a href="../admin/dashboard.php">Dashboard</a>
+    <a href="manage_hotlines.php" class="active">Hotlines</a>
+    <a href="manage_guidelines.php">Guidelines</a>
+    <a href="../admin/logout.php">Logout</a>
+</aside>
 
 <main class="admin-main">
     <h1>Manage Emergency Guidelines</h1>
